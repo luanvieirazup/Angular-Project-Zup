@@ -11,10 +11,21 @@
     }
 
     &__user {
-        height: 50px;
+        color: white;
     }
 }
 
 .form-control {
     border-radius: 3rem;
+}
+
+.material-icons {
+    font-size: 35px;
+}
+
+.search_icon {
+    color: #B4C12C;
+    position: absolute;
+    font-size: 25px;
+    padding: 8px 0px 0px 12px;
 }

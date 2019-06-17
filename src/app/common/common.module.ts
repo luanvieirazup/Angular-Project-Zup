@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { HeaderComponent } from './header/header.component';
 import { SideBarComponent } from './side-bar/side-bar.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -8,6 +9,7 @@ import { SideBarComponent } from './side-bar/side-bar.component';
     SideBarComponent
   ],
   imports: [
+    RouterModule,
 
   ],
   exports: [

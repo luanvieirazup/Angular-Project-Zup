@@ -1,14 +1,20 @@
 <div class="nav d-flex mt-3 ml-3">
-    <span class="nav__sections d-flex mb-3">
-        <i class="material-icons mr-2">apps</i>
-        Todos
-    </span>
-    <span class="nav__sections d-flex mb-3">
-        <i class="material-icons mr-2">check</i>
-        Atendidos
-    </span>
+    <a [routerLink]="'/everyone'" routerLinkActive="nav__sections__active">
+        <span class="nav__sections d-flex mb-3">
+                <i class="material-icons mr-2">apps</i>
+                Todos
+        </span>
+    </a>
+    <a [routerLink]="'/attended'" routerLinkActive="nav__sections__active">
+        <span class="nav__sections d-flex mb-3">
+            <i class="material-icons mr-2">check</i>
+            Atendidos
+        </span>
+    </a>
+    <a [routerLink]="'/trash'" routerLinkActive="nav__sections__active">
     <span class="nav__sections d-flex mb-3">
         <i class="material-icons mr-2">delete</i>
         Lixeira
     </span>
+    </a>
 </div>

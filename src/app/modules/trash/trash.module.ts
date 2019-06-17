@@ -1,10 +1,13 @@
+import { TrashComponent } from './trash.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TrashtingModule } from './trash.routing';
 
 @NgModule({
-  declarations: [],
+  declarations: [TrashComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    TrashtingModule
   ]
 })
 export class TrashModule { }

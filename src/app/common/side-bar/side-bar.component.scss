@@ -3,9 +3,17 @@
 
     &__sections {
         cursor: pointer;
+
+        &__active {
+            color: red;
+        }
     }
 }
 
 .material-icons {
     color: #87868A;
+}
+
+.active {
+    
 }

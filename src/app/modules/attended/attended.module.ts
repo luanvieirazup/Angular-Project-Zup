@@ -1,10 +1,15 @@
+import { AttendedComponent } from './attended.component';
+import { AttendedRoutingModule } from './attended.routing';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    AttendedComponent
+  ],
   imports: [
-    CommonModule
+    CommonModule,
+    AttendedRoutingModule
   ]
 })
 export class AttendedModule { }

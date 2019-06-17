@@ -1,6 +1,6 @@
 .header {
     background-color: #013750;
-    // height: 100px;
+    box-shadow: 0 5px 10px -5px #333333;
 
     &__search {
 
@@ -11,7 +11,10 @@
     }
 
     &__user {
-        color: white;
+        color: white !important;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 50px;
     }
 }
 

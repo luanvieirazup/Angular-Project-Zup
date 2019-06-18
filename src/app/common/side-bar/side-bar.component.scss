@@ -5,15 +5,16 @@
         cursor: pointer;
 
         &__active {
-            color: red;
+            color: #B3C02B;
         }
     }
 }
 
-.material-icons {
+a {
     color: #87868A;
 }
 
-.active {
-    
+a:hover {
+	text-decoration: none; 
+	color: #B3C02B;
 }

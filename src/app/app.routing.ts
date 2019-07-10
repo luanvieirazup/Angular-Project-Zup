@@ -5,7 +5,9 @@ const routes: Routes = [
   // { path: '', component: meucomponente },
   {path: 'everyone', loadChildren: './modules/home/home.module#HomeModule'},
   {path: 'attended', loadChildren: './modules/attended/attended.module#AttendedModule'},
-  {path: 'trash', loadChildren: './modules/trash/trash.module#TrashModule'}
+  {path: 'trash', loadChildren: './modules/trash/trash.module#TrashModule'},
+  {path: 'profile', loadChildren: './modules/profile/profile.module#ProfileModule'}
+
 
 ];
 

@@ -9,7 +9,11 @@
         <div class="col-2">{{ user.phone }}</div>
         <div class="col-2">{{ user.location.city }}</div>
         <div class="col-2 d-flex justify-content-around">
-            <i class="material-icons mr-2v">remove_red_eye</i>
+            <i
+                class="material-icons mr-2v"
+                [routerLink]="'/profile'"
+            >
+            remove_red_eye</i>
             <i class="material-icons mr-2">delete</i>
             <i class="material-icons mr-2">apps</i>
             <i class="material-icons mr-2">check</i>

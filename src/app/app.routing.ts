@@ -8,7 +8,6 @@ const routes: Routes = [
   {path: 'trash', loadChildren: './modules/trash/trash.module#TrashModule'},
   {path: 'profile', loadChildren: './modules/profile/profile.module#ProfileModule'}
 
-
 ];
 
 @NgModule({

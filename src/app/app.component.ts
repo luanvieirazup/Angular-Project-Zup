@@ -9,12 +9,8 @@ import { User } from './interfaces/user';
 })
 export class AppComponent implements OnInit {
 
-  users: User[];
-
-  constructor(private randomUserService: RandomUserService) { }
+  constructor() { }
 
   ngOnInit() {
-    this.randomUserService.getMultipleUsers().subscribe(dados => this.users = dados.results);
-    console.log(this.users);
   }
 }

@@ -1,12 +1,4 @@
-export interface InfoUser {
-  seed: string;
-  results: number;
-  page: number;
-  version: number;
-}
-
 export interface ResultUsers {
-  info: InfoUser;
   results: User[];
 }
 

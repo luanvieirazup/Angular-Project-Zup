@@ -1,14 +1,13 @@
 .navbar {
-    box-shadow: 10px 0 5px -5px rgba(239, 239, 239, 20);
-    z-index: 1;
+    // box-shadow: 10px 0 5px -5px rgba(239, 239, 239, 20);
     align-items: flex-start;
 }
 
 .content {
     background-color: #F9F9F9;
-    z-index: -1;
 }
 
 .home {
     min-height: calc(100vh - 80px);
+    // height: -webkit-fill-available;
 }

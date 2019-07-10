@@ -1,1 +1,18 @@
-<h1>OI</h1>
+<div class="spinner d-flex" *ngIf="loading">
+    <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+</div>
+<div class="users" *ngIf="users">
+    <div class="users__user row no-gutters" *ngFor="let user of users">
+        <img src="{{ user.picture.medium }}" class="users__pictures">
+        <div class="col-2">{{ user.name.first }}</div>
+        <div class="col-3">{{ user.email }}</div>
+        <div class="col-2">{{ user.phone }}</div>
+        <div class="col-2">{{ user.location.city }}</div>
+        <div class="col-2 d-flex justify-content-around">
+            <i class="material-icons mr-2v">remove_red_eye</i>
+            <i class="material-icons mr-2">delete</i>
+            <i class="material-icons mr-2">apps</i>
+            <i class="material-icons mr-2">check</i>
+        </div>
+    </div>
+</div>

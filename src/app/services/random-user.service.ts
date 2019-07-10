@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class RandomUserService {
 
-  private readonly APIMultipleUsers = 'https://randomuser.me/api/?results=10';
+  private readonly APIMultipleUsers = 'https://randomuser.me/api/?results=10&noinfo';
 
   constructor(private http: HttpClient) { }
 

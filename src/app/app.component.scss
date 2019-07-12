@@ -1,10 +1,12 @@
 .navbar {
-    // box-shadow: 10px 0 5px -5px rgba(239, 239, 239, 20);
+    box-shadow: 10px 0 5px -5px rgba(239, 239, 239, 20);
     align-items: flex-start;
+    z-index: 1;
 }
 
 .content {
     background-color: #F9F9F9;
+    padding-top: 15px;
 }
 
 .home {

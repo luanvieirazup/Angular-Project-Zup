@@ -10,20 +10,25 @@
   <div class="profile__content">
     <div class="profile__content__card">
       <div class="profile__content__card-header"></div>
-      <div class="profile__content__card-info row no-gutters">
-        footer
+      <div class="profile__content__card-info row d-flex no-gutters">
+        <div class="profile__content__card-info-title pt-4">
+          Hi, my name is
+        </div>
+        <div class="profile__content__card-info-subtitle">
+          {{user?.name.first}} {{user?.name.last}}
+        </div>
       </div>
       <div class="profile__content__card-icons row no-gutters">
-          <i class="material-icons icons">arrow_back_ios</i>
-          <i class="material-icons icons">arrow_back_ios</i>
-          <i class="material-icons icons">arrow_back_ios</i>
-          <i class="material-icons icons">arrow_back_ios</i>
-          <i class="material-icons icons">arrow_back_ios</i>
-          <i class="far fa-user"></i>
+        <i class="profile__content__card-icons-size material-icons pr-5">person_outline</i>
+        <i class="profile__content__card-icons-size material-icons pr-5">mail_outline</i>
+        <i class="profile__content__card-icons-size material-icons pr-5">calendar_today</i>
+        <i class="profile__content__card-icons-size material-icons pr-5">map</i>
+        <i class="profile__content__card-icons-size material-icons pr-5">phone</i>
+        <i class="profile__content__card-icons-size material-icons pr-5">vpn_key</i>
       </div>
       <div class="profile__content__card__user">
         <div class="profile__content__card__user-image">
-          imagem aqui
+        <img src="{{ user?.picture.medium }}" class="profile__content__card__user-image-size">
         </div>
       </div>
     </div>

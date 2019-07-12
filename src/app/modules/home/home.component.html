@@ -4,14 +4,15 @@
 <div class="users" *ngIf="users">
     <div class="users__user row no-gutters" *ngFor="let user of users">
         <img src="{{ user.picture.medium }}" class="users__pictures">
-        <div class="col-2">{{ user.name.first }}</div>
-        <div class="col-3">{{ user.email }}</div>
-        <div class="col-2">{{ user.phone }}</div>
-        <div class="col-2">{{ user.location.city }}</div>
+        <div class="col-2">{{ user?.name.first }} {{user?.name.last}}</div>
+        <div class="col-3">{{ user?.email }}</div>
+        <div class="col-2">{{ user?.phone }}</div>
+        <div class="col-2">{{ user?.location.city }}</div>
         <div class="col-2 d-flex justify-content-around">
             <i
                 class="material-icons mr-2v"
                 [routerLink]="'/profile'"
+                (click)="setProfile(user)"
             >
             remove_red_eye
             </i>

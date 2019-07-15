@@ -12,7 +12,7 @@
       <div class="profile__content__card-header"></div>
         <div class="profile__content__card-info row no-gutters" *ngFor="let user of userInfo" [hidden]="icon != user?.info">
           <div class="profile__content__card-info-title pt-4">
-            {{ user?.title }}
+            {{ user?.title | translate}}
           </div>
           <div class="profile__content__card-info-subtitle">
             {{ user?.subtitle }}

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ProfileUserService } from 'src/app/services/profile-user.service';
 import { User, Userinfo } from 'src/app/interfaces/user';
 import { Router } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-profile',
@@ -31,37 +32,37 @@ export class ProfileComponent implements OnInit {
 
   setUserInfo() {
     this.userInfo = [{
-      title: 'Hi, My name is',
+      title: 'USER_INFO.NAME',
       subtitle: `${this.user.name.first} ${this.user.name.last}`,
       icon: 'person_outline',
       info: 'user'
     },
     {
-      title: 'My email address is',
+      title: 'USER_INFO.EMAIL',
       subtitle: `${this.user.email}`,
       icon: 'mail_outline',
       info: 'mail'
     },
     {
-      title: 'My age is',
+      title: 'USER_INFO.AGE',
       subtitle: `${this.user.dob.age}`,
       icon: 'calendar_today',
       info: 'calendar'
     },
     {
-      title: 'My address is',
+      title: 'USER_INFO.ADDRESS',
       subtitle: `${this.user.location.city} ${this.user.location.postcode}`,
       icon: 'map',
       info: 'map'
     },
     {
-      title: 'My phone number is',
+      title: 'USER_INFO.PHONE',
       subtitle: `${this.user.phone}`,
       icon: 'phone_iphone',
       info: 'phone'
     },
     {
-      title: 'My password is',
+      title: 'USER_INFO.PASSWORD',
       subtitle: `${this.user.login.password}`,
       icon: 'vpn_key',
       info: 'key'

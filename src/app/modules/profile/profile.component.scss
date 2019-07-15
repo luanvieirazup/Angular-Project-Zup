@@ -63,6 +63,7 @@
             }
 
             &-icons {
+                color: #D2D2D2;
                 height: 150px;
                 align-items: center;
                 justify-content: center;
@@ -70,6 +71,10 @@
 
                 &-size {
                     font-size: 50px;
+
+                    &-active {
+                        color: #B3C02B;
+                    }
                 }
             }
 

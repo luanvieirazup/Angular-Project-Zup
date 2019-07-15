@@ -10,25 +10,27 @@
   <div class="profile__content">
     <div class="profile__content__card">
       <div class="profile__content__card-header"></div>
-      <div class="profile__content__card-info row d-flex no-gutters">
-        <div class="profile__content__card-info-title pt-4">
-          Hi, my name is
+        <div class="profile__content__card-info row no-gutters" *ngFor="let user of userInfo" [hidden]="icon != user?.info">
+          <div class="profile__content__card-info-title pt-4">
+            {{ user?.title }}
+          </div>
+          <div class="profile__content__card-info-subtitle">
+            {{ user?.subtitle }}
+          </div>
         </div>
-        <div class="profile__content__card-info-subtitle">
-          {{user?.name.first}} {{user?.name.last}}
+        <div class="profile__content__card-icons row no-gutters">
+          <i
+            class="profile__content__card-icons-size material-icons pr-5"
+            (mouseover)="setIcon(user.info)"
+            [class.profile__content__card-icons-size-active]="icon == user?.info"
+            *ngFor="let user of userInfo"
+          >
+            {{ user?.icon }}
+          </i>
         </div>
-      </div>
-      <div class="profile__content__card-icons row no-gutters">
-        <i class="profile__content__card-icons-size material-icons pr-5">person_outline</i>
-        <i class="profile__content__card-icons-size material-icons pr-5">mail_outline</i>
-        <i class="profile__content__card-icons-size material-icons pr-5">calendar_today</i>
-        <i class="profile__content__card-icons-size material-icons pr-5">map</i>
-        <i class="profile__content__card-icons-size material-icons pr-5">phone</i>
-        <i class="profile__content__card-icons-size material-icons pr-5">vpn_key</i>
-      </div>
       <div class="profile__content__card__user">
         <div class="profile__content__card__user-image">
-        <img src="{{ user?.picture.medium }}" class="profile__content__card__user-image-size">
+        <img src="{{ user?.picture.large }}" class="profile__content__card__user-image-size">
         </div>
       </div>
     </div>

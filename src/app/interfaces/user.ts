@@ -54,3 +54,10 @@ export interface User {
   };
   nat: string;
 }
+
+export interface Userinfo {
+  title: string;
+  subtitle: string;
+  icon: string;
+  info: string;
+}

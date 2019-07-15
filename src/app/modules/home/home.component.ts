@@ -26,8 +26,7 @@ export class HomeComponent implements OnInit {
     this.getUser();
   }
 
-  setProfile(user) {
+  setProfile(user: User) {
     this.profileUserService.setProfile(user);
   }
-
 }

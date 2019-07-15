@@ -6,11 +6,11 @@ import { User } from '../interfaces/user';
 })
 export class ProfileUserService {
 
-  userProfile: User;
+  private userProfile: User;
 
   constructor() { }
 
-  setProfile(user) {
+  setProfile(user: User) {
     this.userProfile = user;
   }
 

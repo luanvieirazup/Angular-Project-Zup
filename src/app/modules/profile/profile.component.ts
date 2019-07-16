@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ProfileUserService } from 'src/app/services/profile-user.service';
 import { User, Userinfo } from 'src/app/interfaces/user';
 import { Router } from '@angular/router';
-import { TranslateService } from '@ngx-translate/core';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-profile',
@@ -15,7 +15,7 @@ export class ProfileComponent implements OnInit {
   icon = 'user';
   userInfo: Userinfo[];
 
-  constructor(private profileUserService: ProfileUserService, private router: Router) { }
+  constructor(private profileUserService: ProfileUserService, private router: Router, private location: Location) { }
 
   ngOnInit() {
     if (this.user === undefined) {
@@ -28,6 +28,10 @@ export class ProfileComponent implements OnInit {
 
   setIcon(event) {
     this.icon = event;
+  }
+
+  goBack() {
+    this.location.back();
   }
 
   setUserInfo() {

@@ -23,7 +23,7 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.getUser();
+      this.getUser();
   }
 
   setProfile(user: User) {

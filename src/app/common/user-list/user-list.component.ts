@@ -9,7 +9,7 @@ import { ProfileUserService } from 'src/app/services/profile-user.service';
 })
 export class UserListComponent implements OnInit {
 
-  @Input() recebeUsers: Array<any>;
+  @Input() receiveUsers: Array<any>;
 
   constructor(private profileUserService: ProfileUserService) { }
 

@@ -1,7 +1,7 @@
-<app-loader *ngIf="!recebeUsers" ></app-loader>
+<app-loader *ngIf="!receiveUsers" ></app-loader>
 
 <div class="users">
-    <div class="users__user row no-gutters" *ngFor="let user of recebeUsers">
+    <div class="users__user row no-gutters" *ngFor="let user of receiveUsers">
         <img src="{{ user.picture.medium }}" class="users__pictures">
         <div class="col-2">{{ user?.name.first }} {{user?.name.last}}</div>
         <div class="col-3">{{ user?.email }}</div>

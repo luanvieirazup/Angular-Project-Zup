@@ -5,12 +5,14 @@ import { RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import { UserListComponent } from './user-list/user-list.component';
 import { CommonModule } from '@angular/common';
+import { LoaderComponent } from './loader/loader.component';
 
 @NgModule({
   declarations: [
     HeaderComponent,
     SideBarComponent,
     UserListComponent,
+    LoaderComponent,
   ],
   imports: [
     RouterModule,

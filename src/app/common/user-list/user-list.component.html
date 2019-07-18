@@ -1,6 +1,4 @@
-<div class="spinner d-flex" *ngIf="!recebeUsers">
-    <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-</div>
+<app-loader *ngIf="!recebeUsers" ></app-loader>
 
 <div class="users">
     <div class="users__user row no-gutters" *ngFor="let user of recebeUsers">

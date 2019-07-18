@@ -3,6 +3,7 @@ import { AttendedRoutingModule } from './attended.routing';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
+import { CommonComponentsModule } from 'src/app/common/common.module';
 
 @NgModule({
   declarations: [
@@ -10,6 +11,7 @@ import { TranslateModule } from '@ngx-translate/core';
   ],
   imports: [
     CommonModule,
+    CommonComponentsModule,
     AttendedRoutingModule,
     TranslateModule.forChild()
   ]

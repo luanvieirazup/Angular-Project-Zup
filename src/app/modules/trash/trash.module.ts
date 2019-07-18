@@ -1,15 +1,15 @@
 import { TrashComponent } from './trash.component';
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { TrashtingModule } from './trash.routing';
+import { TrashRoutingModule } from './trash.routing';
 import { TranslateModule } from '@ngx-translate/core';
+import { CommonComponentsModule } from 'src/app/common/common.module';
 
 @NgModule({
-  declarations: [TrashComponent],
   imports: [
-    CommonModule,
-    TrashtingModule,
+    CommonComponentsModule,
+    TrashRoutingModule,
     TranslateModule.forChild()
-  ]
+  ],
+  declarations: [TrashComponent]
 })
 export class TrashModule { }

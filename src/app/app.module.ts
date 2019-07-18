@@ -1,4 +1,4 @@
-import { CommonModule } from './common/common.module';
+import { CommonComponentsModule } from './common/common.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {TranslateModule, TranslateService} from '@ngx-translate/core';
@@ -16,7 +16,7 @@ import { translations } from './common/i18n/pt-BR';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CommonModule,
+    CommonComponentsModule,
     HttpClientModule,
     TranslateModule.forRoot()
   ],

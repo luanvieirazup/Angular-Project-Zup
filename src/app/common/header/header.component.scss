@@ -2,11 +2,19 @@
     background-color: #013750;
     margin-left: 0px;
     margin-right: 0px;
-    // box-shadow: 0 5px 10px -5px #333333;
 
     &__search {
 
+        &-input {
+            border: none;
+        }
+
+        ::placeholder {
+            color: rgba($color: #87868a, $alpha: 0.3);
+            font-style: italic;
+        }
     }
+    
 
     &__image {
         height: 80px;

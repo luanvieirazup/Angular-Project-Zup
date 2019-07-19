@@ -15,9 +15,9 @@
         >
             remove_red_eye
         </i>
-            <i class="material-icons mr-2">delete</i>
-            <i class="material-icons mr-2">apps</i>
-            <i class="material-icons mr-2">check</i>
+            <i class="material-icons mr-2" *ngIf="moveToTrash">delete</i>
+            <i class="material-icons mr-2" *ngIf="moveToAll">apps</i>
+            <i class="material-icons mr-2" *ngIf="moveToAttended">check</i>
         </div>
     </div>
 </div>

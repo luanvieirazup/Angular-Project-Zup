@@ -10,6 +10,9 @@ import { ProfileUserService } from 'src/app/services/profile-user.service';
 export class UserListComponent implements OnInit {
 
   @Input() receiveUsers: Array<any>;
+  @Input() moveToTrash: boolean;
+  @Input() moveToAll: boolean;
+  @Input() moveToAttended: boolean;
 
   constructor(private profileUserService: ProfileUserService) { }
 

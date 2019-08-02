@@ -19,7 +19,7 @@ export class UserListComponent implements OnInit {
   ngOnInit() {
   }
 
-  setProfile(user: User) {
+  serviceSetProfile(user: User) {
     this.profileUserService.setProfile(user);
   }
 

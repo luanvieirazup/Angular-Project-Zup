@@ -14,14 +14,14 @@ export class HomeComponent implements OnInit {
 
   constructor(private randomUserService: RandomUserService) { }
 
-  getUser() {
-    this.randomUserService.getMultipleUsers().subscribe(res => {
+  serviceGetUser() {
+      this.randomUserService.getMultipleUsers().subscribe(res => {
       this.users = res.results;
       this.loading = false;
     });
   }
 
   ngOnInit() {
-      this.getUser();
+      this.serviceGetUser();
   }
 }
